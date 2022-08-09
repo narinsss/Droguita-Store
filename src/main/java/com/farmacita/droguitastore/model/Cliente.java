@@ -1,7 +1,5 @@
 package com.farmacita.droguitastore.model;
 
-import java.util.List;
-
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -66,5 +64,13 @@ public class Cliente {
 
 	public void setEndereco(String endereco) {
 		this.endereco = endereco;
+	}
+
+	public Produto getPedido() {
+		return pedido;
+	}
+
+	public void setPedido(Produto pedido) {
+		this.pedido = pedido;
 	}
 }
